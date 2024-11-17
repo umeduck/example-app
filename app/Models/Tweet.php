@@ -9,4 +9,8 @@ class Tweet extends Model
 {
     use FactoriesHasFactory;
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
